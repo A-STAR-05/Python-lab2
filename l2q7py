@@ -1,0 +1,12 @@
+points = [(1, 2), (2, 4), (3, 6),(5,21)]  
+x1,y1=points[0]
+x2,y2=points[1]
+slope = (y2 - y1) / (x2 - x1)
+for i in range(2,len(points)):
+    x3,y3=points[i]
+    if  slope == (y3 - y1)/(x3 - x1):
+        print(f"The point ({x3}, {y3}) lies on the line defined by the first two points.")
+    else:
+        print(f"The point ({x3}, {y3}) does not lie on the line defined by the first two points.")
+
+
